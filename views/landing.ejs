@@ -1,0 +1,25 @@
+<%- include('partials/head', { title: 'Home' }) -%>
+<% if(email.length > 0) {%>
+    <h1 class="head-l">Logged in with <%= email %> </h1>
+    <h4 class="center">You can access the secret data</h4>
+<% } else {%> 
+    <h1 class="head-l">Nobody is Logged in</h1>
+    <h4 class="center">Guest Session</h4>
+<% } %>  
+<hr>
+<div class="secret-link">
+    <a href="/restricted">Secret Data</a>
+</div>
+
+<% if(email.length > 0) {%>
+    <div class="link-box"> 
+        <a href="/logout">Logout</a>
+    </div>
+<% } else {%>
+    <div class="link-box">
+        <a href="/register" style="margin-right: 10px;;">Sign Up</a>
+        <a href="/login">Login</a>
+    </div>
+<% } %>
+
+<%- include('partials/foot') -%>

@@ -1,0 +1,20 @@
+<%- include('partials/head', { title: 'Login' }) -%>
+<h1 class="head">Login Form</h1>
+<div class="form">
+  <form method="post" action="/login">
+    <div class="form-field">
+      <input type="email" name="username" placeholder="Email (e.g foo@bar.com)" autocomplete="on">
+    </div>
+    
+    <div class="form-field">
+      <input type="text" name="password" placeholder="Password">
+    </div>
+    
+    <input type="submit" class="form-btn" value="Login">
+  </form>
+</div>
+<div class="link-box">
+  <a href="/register">Sign Up</a>
+</div>
+
+<%- include('partials/foot') -%>

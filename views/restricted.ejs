@@ -1,0 +1,36 @@
+<%- include('partials/head', { title: 'Secrets' }) -%>
+    <h1 class="head"> Welcome to R/A Archives </h1>
+    <div style="width:200px; margin:0 auto;">
+        <div class="obj"></div>
+    </div>
+    
+    <li>USA never went to moon</li>
+    <li>Earth is flat</li>
+    <li>Hitler won all Nobels & Oscars from 1939-44</li>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .obj{
+            width:50px;
+            height: 5px;
+            background-color: rgb(14, 139, 235);
+            animation: anime 2s forwards infinite;
+        }
+        @keyframes anime {
+            0% {
+                transform: translateX(-100px);
+                width: 50px;
+            }
+            50% {
+                transform: translateX(200px);
+                width:50px;
+            }
+            100% {
+                transform: translateX(-100px);
+                width: 50px;
+            }
+        }
+    </style>
+<%- include('partials/foot') -%>

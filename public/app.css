@@ -1,0 +1,81 @@
+.head,
+.head-l {
+	text-align: center;
+	font-size: 30px;
+}
+.form {
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+}
+.form-field input {
+	width: 20vw;
+	min-width: 100px;
+	padding: 5px 10px;
+	font-size: 18px;
+	color: rgb(55, 55, 55);
+	margin: 10px auto;
+	outline: none;
+	border: 1px solid gray;
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+}
+.form-btn {
+	width: 100%;
+	padding: 5px;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-size: large;
+	font-weight: bold;
+	background-color: rgb(38, 134, 225);
+}
+.link-box {
+	width: 20%;
+	margin: auto;
+	display: flex;
+	padding: 5px;
+	border-bottom: 2px solid rgb(175, 174, 174);
+	justify-content: space-around;
+}
+.link-box a {
+	font-size: larger;
+	color: rgb(19, 112, 184);
+	text-decoration: none;
+}
+
+hr {
+	background-color: gray;
+	height: 2px;
+}
+
+.secret-link {
+	margin: 40px 0 60px;
+	text-align: center;
+}
+.secret-link a {
+	text-decoration: none;
+	font-size: large;
+	font-weight: bold;
+	animation: anime 2s linear infinite;
+}
+@keyframes anime {
+	0% {
+		color: black;
+	}
+	50% {
+		color: rgb(253, 16, 16);
+	}
+	100% {
+		color: black;
+	}
+}
+
+li {
+	font-size: large;
+}
+.center {
+	color: rgb(70, 70, 70);
+	text-align: center;
+	font-size: 18px;
+}
